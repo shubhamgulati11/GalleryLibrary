@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.gallerylibrary.Sgallery;
-import com.example.gallerylibrary.Slib;
+
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sgallery.s(MainActivity.this,arrayList);
+                Sgallery.S(MainActivity.this,arrayList);
 
             }
         });

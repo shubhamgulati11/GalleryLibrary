@@ -19,10 +19,11 @@ public class Grid extends AppCompatActivity {
         setContentView(R.layout.activity_grid2);
         Bundle bundle = getIntent().getExtras();
         imagesArrayList=bundle.getStringArrayList("key");
+        int col = bundle.getInt("col");
         Log.e("Tag",""+imagesArrayList.get(1));
         rv = findViewById(R.id.rv);
         GridAdapter adapter = new GridAdapter(this,imagesArrayList);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,col);
 //        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rv.setAdapter(adapter);
         rv.setItemViewCacheSize(20);
