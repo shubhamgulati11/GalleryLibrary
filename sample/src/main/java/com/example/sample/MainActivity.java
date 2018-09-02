@@ -18,15 +18,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final ArrayList<String> arrayList = new ArrayList<>();
-//        arrayList.add("https://randomuser.me/api/portraits/men/32.jpg");
-//        arrayList.add("https://randomuser.me/api/portraits/men/23.jpg");
-//        arrayList.add("https://randomuser.me/api/portraits/men/52.jpg");
-//        arrayList.add("https://randomuser.me/api/portraits/men/19.jpg");
-//        arrayList.add("https://randomuser.me/api/portraits/men/45.jpg");
-        arrayList.add("https://picsum.photos/200/300/?random");
-        arrayList.add("https://picsum.photos/200/300/?random");
-        arrayList.add("https://picsum.photos/200/300/?random");
-        arrayList.add("https://picsum.photos/200/300/?random");
+
+        arrayList.add("https://picsum.photos/200/300/?image=1071");
+        arrayList.add("https://picsum.photos/200/300/?image=1072");
+        arrayList.add("http://www.deepdiveintel.com/wp-content/uploads/2013/09/Owl-Eye-art-300x300.jpg");
+        arrayList.add("https://picsum.photos/200/300/?image=1073");
+        arrayList.add("https://picsum.photos/200/300/?image=1074");
+        arrayList.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK1cbsBe4SaSGW3p1pS5rg7mZPku42EJBHO2kI7lErdnWPXtHs");
+        arrayList.add("https://picsum.photos/200/300/?image=1075");
+        arrayList.add("https://picsum.photos/200/300/?image=1076");
+        arrayList.add("https://picsum.photos/200/300/?image=1077");
+        arrayList.add("https://picsum.photos/200/300/?image=1078");
+        arrayList.add("https://picsum.photos/200/300/?image=1079");
         btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
