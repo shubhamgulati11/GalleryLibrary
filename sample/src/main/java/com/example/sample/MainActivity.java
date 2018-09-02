@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.gallerylibrary.Sgallery;
 import com.example.gallerylibrary.Slib;
 
 import java.util.ArrayList;
@@ -24,14 +25,14 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("https://randomuser.me/api/portraits/men/53.jpg");
 //        arrayList.add(new images("https://randomuser.me/api/portraits/men/57.jpg"));
 //        arrayList.add(new images("https://randomuser.me/api/portraits/men/57.jpg"));
-        final Slib b = new Slib();
         btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                b.imagesArrayList(arrayList);
+                Sgallery.s(MainActivity.this,arrayList);
+
             }
         });
-//        b.imagesArrayList(arrayList);
+//
     }
 }

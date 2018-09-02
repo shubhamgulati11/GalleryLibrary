@@ -10,13 +10,14 @@ import java.util.ArrayList;
 
 public class Grid extends AppCompatActivity {
 
-    ArrayList<images> imagesArrayList = new ArrayList<>();
+    ArrayList<String> imagesArrayList = new ArrayList<>();
     RecyclerView rv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid2);
-        imagesArrayList=getIntent().getParcelableArrayListExtra("key");
+        Bundle bundle = getIntent().getExtras();
+        imagesArrayList=bundle.getStringArrayList("key");
         rv = findViewById(R.id.rv);
 //        GridAdapter adapter = new GridAdapter(this,imagesArrayList);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
