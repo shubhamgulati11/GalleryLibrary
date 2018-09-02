@@ -18,13 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final ArrayList<String> arrayList = new ArrayList<>();
-//        arrayList.add(new images("https://randomuser.me/api/portraits/men/57.jpg"));
-//        arrayList.add(new images("https://randomuser.me/api/portraits/men/58.jpg"));
         arrayList.add("https://randomuser.me/api/portraits/men/59.jpg");
         arrayList.add("https://randomuser.me/api/portraits/men/54.jpg");
         arrayList.add("https://randomuser.me/api/portraits/men/53.jpg");
-//        arrayList.add(new images("https://randomuser.me/api/portraits/men/57.jpg"));
-//        arrayList.add(new images("https://randomuser.me/api/portraits/men/57.jpg"));
         btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,7 +3,6 @@
     package="com.example.gallerylibrary">
 
     <application>
-        <activity android:name=".Slib" />
         <activity android:name=".Grid" />
         <activity
             android:name=".Views"
