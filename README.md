@@ -28,5 +28,5 @@ Add repository url and dependency in application module gradle file:
 * Glide
 * Stack overflow
 
-Hope this helps you making in your app. Keep developing.
+Hope this helps you in making your app. Keep developing.
     
