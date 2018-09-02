@@ -18,10 +18,10 @@ import java.util.ArrayList;
 
 public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
     Context cxt;
-    ArrayList<images> imageArraylist;
+    ArrayList<String> imageArraylist;
     LayoutInflater li;
 
-    public GridAdapter(Context cxt, ArrayList<images> imageArraylist) {
+    public GridAdapter(Context cxt, ArrayList<String> imageArraylist) {
         this.cxt = cxt;
         this.imageArraylist = imageArraylist;
     }
@@ -36,8 +36,8 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull GridAdapter.ViewHolder holder, final int position) {
-        final images i = imageArraylist.get(position);
-        Glide.with(cxt).load(i.getName())
+        String t = imageArraylist.get(position);
+        Glide.with(cxt).load(t)
                 .thumbnail(0.5f)
                 .apply(new RequestOptions()
                         .diskCacheStrategy(DiskCacheStrategy.ALL))
@@ -46,7 +46,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(cxt, Views.class);
-                i.putParcelableArrayListExtra("data", imageArraylist);
+                i.putStringArrayListExtra("data", imageArraylist);
                 i.putExtra("pos", position);
                 cxt.startActivity(i);
             }

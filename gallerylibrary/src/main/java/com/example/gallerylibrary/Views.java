@@ -36,7 +36,7 @@ public class Views extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    public ArrayList<images> data = new ArrayList<>();
+    public ArrayList<String> data = new ArrayList<>();
     int pos;
 
     /**
@@ -53,7 +53,7 @@ public class Views extends AppCompatActivity {
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        data = getIntent().getParcelableArrayListExtra("data");
+        data = getIntent().getStringArrayListExtra("data");
         pos = getIntent().getIntExtra("pos", 0);
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(),data);
 
@@ -143,9 +143,9 @@ public class Views extends AppCompatActivity {
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
-        ArrayList<images> data = new ArrayList<>();
+        ArrayList<String> data = new ArrayList<>();
 
-        public SectionsPagerAdapter(FragmentManager fm, ArrayList<images> data) {
+        public SectionsPagerAdapter(FragmentManager fm, ArrayList<String> data) {
             super(fm);
             this.data = data;
         }
@@ -158,7 +158,7 @@ public class Views extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position,data.get(position).getName());
+            return PlaceholderFragment.newInstance(position,data.get(position));
         }
 
         @Override

@@ -16,9 +16,9 @@ public class Slib extends AppCompatActivity {
 //        setContentView(R.layout.activity_main2);
 
     }
-    public void imagesArrayList(ArrayList<images> im){
+    public void imagesArrayList(ArrayList<String> im){
         Intent i = new Intent(Slib.this,Grid.class);
-        i.putParcelableArrayListExtra("key",im);
+        i.putExtra("key",im);
         getBaseContext().startActivity(i);
     }
 }

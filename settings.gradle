@@ -1,1 +1,1 @@
-include ':app', ':gridviewgallery', ':gallerylibrary'
+include ':app', ':gridviewgallery', ':gallerylibrary', ':sample'
