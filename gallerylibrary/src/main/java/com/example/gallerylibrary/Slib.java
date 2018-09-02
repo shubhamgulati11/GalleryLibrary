@@ -14,10 +14,11 @@ public class Slib extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main2);
+//        public void
 
     }
     public void imagesArrayList(ArrayList<String> im){
-        Intent i = new Intent(Slib.this,Grid.class);
+        Intent i = new Intent(getBaseContext(),Grid.class);
         i.putExtra("key",im);
         getBaseContext().startActivity(i);
     }
