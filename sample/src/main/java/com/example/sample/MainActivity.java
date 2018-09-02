@@ -18,14 +18,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("https://randomuser.me/api/portraits/men/59.jpg");
-        arrayList.add("https://randomuser.me/api/portraits/men/54.jpg");
-        arrayList.add("https://randomuser.me/api/portraits/men/53.jpg");
+        arrayList.add("https://randomuser.me/api/portraits/men/32.jpg");
+        arrayList.add("https://randomuser.me/api/portraits/men/23.jpg");
+        arrayList.add("https://randomuser.me/api/portraits/men/52.jpg");
+        arrayList.add("https://randomuser.me/api/portraits/men/19.jpg");
+        arrayList.add("https://randomuser.me/api/portraits/men/45.jpg");
         btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sgallery.S(MainActivity.this,arrayList);
+                Sgallery.S(MainActivity.this,arrayList,3);
 
             }
         });

@@ -80,7 +80,7 @@ public class Views extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        
+
 
         return super.onOptionsItemSelected(item);
     }
