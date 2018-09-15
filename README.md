@@ -1,4 +1,5 @@
 # **Gallery Library**
+[![Open Source Helpers](https://www.codetriage.com/shubhamgulati11/gallerylibrary/badges/users.svg)](https://www.codetriage.com/shubhamgulati11/gallerylibrary)
 
 This library is used to add gallery feature in your app easily and efficiently.
 
