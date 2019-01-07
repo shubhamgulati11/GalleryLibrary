@@ -17,6 +17,7 @@ Add repository url and dependency in application module gradle file:
 	      compile 'com.github.shubhamgulati11:GalleryLibrary:v1.0'
 	}
 	
+
 ## Usage
 
 
